@@ -4,8 +4,6 @@ from rest_framework import serializers
 from api.validators import validate_username
 from reviews.models import Category, Comments, Genre, Review, Title, User
 
-User = get_user_model()
-
 
 class UserSerializer(serializers.ModelSerializer):
     username = serializers.CharField(required=True)
